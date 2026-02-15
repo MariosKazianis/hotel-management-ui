@@ -1,0 +1,52 @@
+body{
+    background-color: white;
+}
+img{
+    display: block;
+    width: 500px;
+    margin:auto;
+}
+h1{
+    color : red;
+    border: 2px solid powderblue;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.popupContent{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+#customersMenu{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#addCustomerBtn{
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+#viewCustomerListBtn{
+    align-self: center;
+    margin-bottom: 20px;
+}
