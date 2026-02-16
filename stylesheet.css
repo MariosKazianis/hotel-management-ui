@@ -27,8 +27,8 @@ h2{
 }
 .popupContent{
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -49,4 +49,17 @@ h2{
 #viewCustomerListBtn{
     align-self: center;
     margin-bottom: 20px;
+}
+#customerListPopupContent{
+    flex-direction: column;
+    height: 50%;
+    width: 50%
+}
+#customerList{
+    margin:auto
+}
+
+#cancelCustomerListBtn{
+    margin-left: auto;
+    margin-top: auto;
 }
