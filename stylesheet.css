@@ -41,25 +41,36 @@ h2{
     flex-direction: column;
     justify-content: center;
 }
-#addCustomerBtn{
+
+#bookingMenu{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.menuBtn{
     align-self: center;
     margin-bottom: 20px;
 }
 
-#viewCustomerListBtn{
-    align-self: center;
-    margin-bottom: 20px;
-}
 #customerListPopupContent{
     flex-direction: column;
     height: 50%;
     width: 50%
 }
-#customerList{
+
+#bookingListPopupContent{
+    flex-direction: column;
+    height: 50%;
+    width: 50%
+}
+.list{
     margin:auto
 }
 
-#cancelCustomerListBtn{
+.cancel{
     margin-left: auto;
     margin-top: auto;
 }

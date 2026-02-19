@@ -24,6 +24,10 @@ saveCustomerBtn.onclick = async function(){
         },
         body: JSON.stringify({ name : customerName.value , email: customerEmail.value })
     });
+    if (!response.ok) {
+        const error = await response.json();
+        console.log(error);
+    }
     addCustomerPopup.style.display = "none";
 }
 
@@ -35,6 +39,10 @@ viewCustomerListBtn.onclick = async function(){
     const response = await fetch(`${url}/customers`, {
         method: "GET",
     })
+    if (!response.ok) {
+        const error = await response.json();
+        console.log(error);
+    }
     const result = await response.json();
     const parentNode = document.getElementById("customerList");
     parentNode.innerHTML = "";

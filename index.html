@@ -8,25 +8,48 @@
 <body>
     <img src="C:\Users\Marios\WebstormProjects\HotelManagerUI\Management.jpg" alt="HotelManager">
     <h1><b>HotelManagementDashBoard</b></h1>
-    <h2><b>Customers</b></h2>
+    <h2><b>Customer's Menu</b></h2>
     <div id="customersMenu">
-        <button id="addCustomerBtn">Add Customer</button>
-        <button id="viewCustomerListBtn">View Customers</button>
+        <button id="addCustomerBtn" class="menuBtn">Add Customer</button>
+        <button id="viewCustomerListBtn" class="menuBtn">View Customers</button>
+    </div>
+    <h2><b>Booking Menu</b></h2>
+    <div id="bookingMenu">
+        <button id="addBookingBtn" class="menuBtn">Add Booking</button>
+        <button id="viewBookingListBtn" class="menuBtn">View Bookings</button>
     </div>
     <div id="addCustomersPopup" class="popup">
         <div id="customerPopupContent" class="popupContent">
             <input type="text" id="customerName" placeholder="Enter Customer Name">
             <input type="text" id="customerEmail" placeholder="Enter Customer Email">
             <button id="saveCustomerBtn">Save</button>
-            <button id="cancelCustomerBtn">Cancel</button>
+            <button id="cancelCustomerBtn" class="cancel">Cancel</button>
         </div>
     </div>
     <div id="viewCustomerListPopup" class="popup">
         <div id="customerListPopupContent" class="popupContent">
-            <ul id="customerList"><b>Customer's List </b></ul>
-            <button id="cancelCustomerListBtn">Back</button>
+            <ul id="customerList" class= "list"><b>Customer's List </b></ul>
+            <button id="cancelCustomerListBtn" class="cancel">Back</button>
         </div>
     </div>
-    <script src="C:\Users\Marios\WebstormProjects\HotelManagerUI\script.js"></script>
+    <div id="addBookingPopup" class="popup">
+         <div id="bookingPopupContent" class="popupContent">
+             <input type="text" id="customerId" placeholder="Enter Customer ID">
+             <input type="text" id="room" placeholder="Enter Room Number">
+             <input type="text" id="checkIn" placeholder="Enter checkIn date YYYY-MM-DD">
+             <input type="text" id="checkOut" placeholder="Enter checkOut date YYYY-MM-DD">
+             <input type="text" id="price" placeholder="Enter price">
+             <button id="saveBookingBtn">Save</button>
+             <button id="cancelBookingBtn">Cancel</button>
+         </div>
+    </div>
+    <div id="viewBookingListPopup" class="popup">
+        <div id="bookingListPopupContent" class="popupContent">
+            <ul id="bookingList" class="list"><b>Booking List </b></ul>
+            <button id="cancelBookingListBtn" class="cancel">Back</button>
+        </div>
+    </div>
+    <script src="C:\Users\Marios\WebstormProjects\HotelManagerUI\customerScript.js"></script>
+    <script src="C:\Users\Marios\WebstormProjects\HotelManagerUI\bookingScript.js"></script>
 </body>
 </html>
